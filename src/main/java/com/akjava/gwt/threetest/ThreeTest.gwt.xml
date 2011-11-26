@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='threetest'>
+
+
+
+
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+
+  <!-- Other module inherits                                      -->
+	<inherits name="com.akjava.gwt.three.Three"/>
+<inherits name="com.akjava.gwt.stats.Stats"/>
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.akjava.gwt.threetest.client.ThreeTest'/>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+ <set-property name="user.agent" value="safari"/>
+
+</module>
