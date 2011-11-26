@@ -16,15 +16,6 @@
 
     <artifactId>GWThree-stats</artifactId>
 
-
-            <dependencies><dependency>
-        <groupId>${project.parent.groupId}</groupId>
-        <artifactId>GWThree-lib</artifactId>
-        <version>${project.parent.version}</version>
-
-    </dependency>
-    </dependencies>
-
     <build> <resources>
       <resource>
         <directory>src/main/java</directory>
