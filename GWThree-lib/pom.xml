@@ -11,9 +11,25 @@
         <artifactId>GWThree</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>${parent.groupId}</groupId>
-    <version>${parent.version}</version>
+    <groupId>${project.parent.groupId}</groupId>
+    <version>${project.parent.version}</version>
 
     <artifactId>GWThree-lib</artifactId>
+    <dependencies><dependency>
+        <groupId>${project.parent.groupId}</groupId>
+        <artifactId>GWThree-js</artifactId>
+        <version>${project.parent.version}</version>
 
+    </dependency>
+    </dependencies>
+<!-- <build> <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.js</include>
+          <include>**/*.java</include>
+          <include>**/*.gwt.xml</include>
+        </includes>
+      </resource>
+    </resources></build>-->
 </project>

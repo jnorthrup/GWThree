@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.4.0//EN"
         "http://google-web-toolkit.googlecode.com/svn/tags/2.4.0/distro-source/core/src/gwt-module.dtd">
-<module rename-to='threetest'>
+<module>
 
-
-    <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+    <inherits name="com.google.gwt.user.theme.clean.Clean"/>
 
     <!-- Other module inherits                                      -->
     <inherits name="com.akjava.gwt.three.Three"/>
     <inherits name="com.akjava.gwt.stats.Stats"/>
     <inherits name="com.google.gwt.uibinder.UiBinder"/>
     <!-- Specify the app entry point class.                         -->
-    <entry-point class='com.akjava.gwt.threetest.client.ThreeTest'/>
+    <entry-point class="com.akjava.gwt.threetest.client.ThreeTest"/>
 
+    <script src="Three.js"/> <!--hideous kludge-->
+    <script src="stats.js"/>     <!--hideous kludge-->
     <stylesheet src="ThreeTest.css"/>
 </module>

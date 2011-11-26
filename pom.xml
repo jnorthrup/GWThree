@@ -124,7 +124,7 @@
 
     </build>
     <modules>
-        <module>GWThree-lib</module>
+         <module>GWThree-lib</module>
         <module>GWThree-stats</module>
         <module>GWThree-test</module>
     </modules>

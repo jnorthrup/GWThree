@@ -4,5 +4,5 @@
 <module>
     <inherits name="com.google.gwt.uibinder.UiBinder"/>
 
-    <script src="Three.js"/>
+    <script src="Three.js" />
 </module>
