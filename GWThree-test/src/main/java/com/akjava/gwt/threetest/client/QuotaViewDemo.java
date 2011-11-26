@@ -77,7 +77,7 @@ private Mesh mesh;
 		
 		JSONLoader loader=THREE.JSONLoader();
 		
-		loader.load("models/two5.js", new LoadHandler() {
+		loader.load("models/simple.js", new LoadHandler() {
 			
 			
 
