@@ -12,7 +12,5 @@
     <!-- Specify the app entry point class.                         -->
     <entry-point class="com.akjava.gwt.threetest.client.ThreeTest"/>
 
-    <script src="Three.js"/> <!--hideous kludge-->
-    <script src="stats.js"/>     <!--hideous kludge-->
     <stylesheet src="ThreeTest.css"/>
 </module>
