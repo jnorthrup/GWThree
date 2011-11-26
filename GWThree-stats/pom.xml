@@ -16,9 +16,11 @@
 
     <artifactId>GWThree-stats</artifactId>
 
-    <build> <resources>
-      <resource>
-        <directory>src/main/java</directory>
-      </resource>
-    </resources></build>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+            </resource>
+        </resources>
+    </build>
 </project>
