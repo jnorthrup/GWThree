@@ -23,31 +23,31 @@ THE SOFTWARE.
  */
 package com.akjava.gwt.stats.client;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.dom.client.Element;
-import com.google.gwt.user.client.ui.RootPanel;
 
-public class Stats extends JavaScriptObject{
-protected Stats(){}
+public class Stats extends JavaScriptObject {
+    protected Stats() {
+    }
 
 
-public static final native Stats create() /*-{
-return new $wnd.Stats();
-	}-*/;
+    public static final native Stats create() /*-{
+        return new $wnd.Stats();
+    }-*/;
 
-public final native void alignTopLeft()/*-{
-this.domElement.style.position = 'absolute';
-this.domElement.style.left = '0px';
-this.domElement.style.top = '0px';
-}-*/;
+    public final native void alignTopLeft()/*-{
+        this.domElement.style.position = 'absolute';
+        this.domElement.style.left = '0px';
+        this.domElement.style.top = '0px';
+    }-*/;
 
-public  final native void update() /*-{
-this.update();
-}-*/;
+    public final native void update() /*-{
+        this.update();
+    }-*/;
 
-public static final Stats insertStatsToRootPanel(){
-	if(!avaiable()){
+    public static final Stats insertStatsToRootPanel() {
+        return create();
+/*	if(!avaiable()){
 		GWT.log("did you forget add line or stats.js https://github.com/mrdoob/stats.js/blob/master/build/Stats.js");
 		GWT.log("<script type=\"text/javascript\" language=\"javascript\" src=\"stats.js\"></script>");
 		throw new RuntimeException("stats.js not found.for detail check log");
@@ -55,22 +55,21 @@ public static final Stats insertStatsToRootPanel(){
 	Stats stats=create();
 	stats.alignTopLeft();
 	RootPanel.get().getElement().appendChild(stats.domElement());
-	return stats;
-}
+	return stats;*/
+    }
 
-public static final native boolean avaiable() /*-{
-if($wnd.Stats){
-	return true;
-}
-else{
-	return false;
-}
-}-*/;
+    public static final native boolean avaiable() /*-{
+        if ($wnd.Stats) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }-*/;
 
 
-
-public  final native Element domElement() /*-{
-return this.domElement;
-}-*/;
+    public final native Element domElement() /*-{
+        return this.domElement;
+    }-*/;
 
 }

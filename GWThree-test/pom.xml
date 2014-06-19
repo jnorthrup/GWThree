@@ -11,8 +11,8 @@
         <artifactId>GWThree</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>${parent.groupId}</groupId>
-    <version>${parent.version}</version>
+    <groupId>${project.parent.groupId}</groupId>
+    <version>${project.parent.version}</version>
     <artifactId>GWThree-test</artifactId>
     <packaging>war</packaging>
 
@@ -20,12 +20,12 @@
         <dependency>
             <groupId>GWThree</groupId>
             <artifactId>GWThree-lib</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>GWThree</groupId>
             <artifactId>GWThree-stats</artifactId>
-            <version>${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 
@@ -39,7 +39,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>2.4.0</version>
                 <executions>
                     <execution>
                         <goals>
@@ -80,15 +79,6 @@
                 </executions>
                 <configuration>
                     <webappDirectory>${webappDirectory}</webappDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <source>${maven.compiler.version}</source>
-                    <target>${maven.compiler.version}</target>
                 </configuration>
             </plugin>
         </plugins>
